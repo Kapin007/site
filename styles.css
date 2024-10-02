@@ -1,0 +1,56 @@
+:root {
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #B0B0B0;
+    --botao-verde: #4CAF50;
+    --cor-de-fundo: #F9F9F9;
+    --fonte-principal: 'Inter';
+    --botao-verde-efeito: #66BB6A;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    color: #333;
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.principal {
+    background-image: url("img/BackgroundCulinario.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    text-align: center;
+    padding: 2em 0;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.container__botao {
+    background-color: var(--botao-verde);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--branco-principal);
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1em;
+}
+
+.botao_secundario {
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);
+}
+
+.container__aviso {
+    font-size: 12px;
+    color: var(--cinza-secundario);
+}
